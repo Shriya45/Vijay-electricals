@@ -1,0 +1,174 @@
+/* Color Palette */
+:root {
+  --primary-dark: #071952; /* Dark blue */
+  --primary-light: #088395; /* Light teal */
+  --accent-color: #37B7C3; /* Aqua teal */
+  --background-color: #EBF4F6; /* Very light background */
+  --text-dark: #2E2E2E; /* Dark text */
+  --text-light: #ffffff; /* White text */
+}
+
+/* General Styling */
+body {
+  background-color: var(--background-color);
+  font-family: 'Segoe UI', sans-serif;
+  color: var(--text-dark);
+}
+
+/* Navbar */
+.navbar {
+  background-color: var(--primary-dark) !important;
+}
+.navbar-brand, .nav-link {
+  color: var(--text-light) !important;
+  font-weight: 500;
+}
+.navbar-brand:hover, .nav-link:hover {
+  color: var(--primary-light) !important;
+}
+
+/* Hero Section */
+#home {
+  background-color: var(--primary-light);
+}
+#home h1 {
+  color: var(--primary-dark);
+}
+#home p {
+  color: var(--accent-color);
+}
+
+/* About Section */
+#about {
+  background-color: var(--text-light);
+}
+#about h2 {
+  color: var(--primary-dark);
+}
+#about p {
+  color: var(--text-dark);
+}
+#readMoreBtn {
+  background-color: var(--primary-dark);
+  border: none;
+  color: var(--text-light);
+}
+#readMoreBtn:hover {
+  background-color: var(--primary-light);
+}
+
+/* Services Section */
+#services {
+  background-color: var(--background-color);
+}
+#services h2 {
+  color: var(--primary-dark);
+}
+.card {
+  border: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+.card-body h5 {
+  color: var(--primary-dark);
+}
+
+/* Gallery Section */
+#gallery {
+  background-color: var(--text-light);
+}
+#gallery h2 {
+  color: var(--primary-dark);
+}
+
+/* Contact Section */
+#contact {
+  background-color: var(--primary-light);
+}
+#contact h2 {
+  color: var(--primary-dark);
+}
+form input, form textarea {
+  border: 1px solid var(--accent-color);
+}
+form input:focus, form textarea:focus {
+  border-color: var(--primary-dark);
+  outline: none;
+}
+
+/* Footer */
+footer {
+  background-color: var(--primary-dark);
+  color: var(--text-light);
+}
+
+/* Icon Bar */
+.icon-bar {
+  position: fixed;
+  top: 40%;
+  right: 0;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  z-index: 1000;
+}
+
+.icon-bar .icon {
+  background-color: var(--primary-dark);
+  color: var(--text-light);
+  padding: 12px;
+  text-align: center;
+  transition: all 0.3s ease;
+  font-size: 20px;
+  text-decoration: none;
+  border: 1px solid #444;
+}
+
+.icon-bar .icon:hover {
+  background-color: var(--primary-light);
+}
+
+.icon-bar .call {
+  background-color: #25d366; /* WhatsApp green for call */
+}
+
+.icon-bar .whatsapp {
+  background-color: #128C7E; /* WhatsApp dark */
+}
+
+/* Additional styles for a polished layout */
+button, .btn {
+  background-color: var(--primary-dark);
+  color: var(--text-light);
+  border: none;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover, .btn:hover {
+  background-color: var(--primary-light);
+  color: var(--primary-dark);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+}
+
+.text-primary {
+  color: var(--primary-dark) !important;
+}
+
+.text-secondary {
+  color: var(--primary-light) !important;
+}
+
+.bg-primary {
+  background-color: var(--primary-dark) !important;
+}
+
+.bg-secondary {
+  background-color: var(--primary-light) !important;
+}
