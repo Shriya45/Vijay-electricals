@@ -1,0 +1,618 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Vijay Electricals</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="{% static 'favicon.ico' %}" type="image/x-icon" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Add in your <head> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{% static 'CSS/style.css' %}" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">Vijay Electricals</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#gallery">Work</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+          <div class="d-flex align-items-center">
+            <div class="me-2">
+              <i class="fa fa-phone"></i>
+            </div>
+            <div class="text-end">
+              <small class="text-muted d-block">Quick Contact:</small>
+              <a
+                href="tel:9372735170"
+                class="text-dark text-decoration-none fw-bold"
+                >+91 9372735170</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="bg-light py-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Left Text -->
+          <div class="col-md-6 text-left">
+            <h1 class="display-5">Welcome to Vijay Electricals</h1>
+            <p class="lead">
+              Professional Electrical Services for Homes & Businesses<br />Trusted
+              electrical solutions wherever you need them.
+            </p>
+            <a href="tel:+9372735170" class="btn btn-primary mt-3">
+              Contact Us
+            </a>
+          </div>
+
+          <!-- Right Circular Image -->
+          <div class="col-md-6 text-center">
+            <img
+              src="{% static 'images/ee2.jpg' %}"
+              alt="Electrical Services"
+              class="img-fluid rounded-circle shadow"
+              style="width: 400px; height: 400px; object-fit: cover"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5 bg-white">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Image on the Left -->
+          <div class="col-md-5 text-center mb-4 mb-md-0">
+            <img
+              src="{% static 'images/about.jpg' %}"
+              alt="About"
+              class="img-fluid rounded-circle shadow"
+              style="width: 300px; height: 300px; object-fit: cover"
+            />
+          </div>
+
+          <!-- Text on the Right -->
+          <div class="col-md-7">
+            <h2>About Us</h2>
+            <p>
+              Since 2011, Vijay Electricals has been delivering reliable
+              electrical solutions as a dedicated sole proprietorship. We
+              specialize in generator installation, servicing, and
+              commissioning, working directly with clients as well as through
+              vendor and third-party contracts. With multiple connections in the
+              industry, we ensure prompt and professional service every time.
+            </p>
+            <p>
+              Our expertise also includes complete electrical wiring for homes,
+              shops, and commercial spaces, along with full fitting of lights,
+              switch boxes, and more. We also provide chemical earthing
+              solutions for generators, homes, and apartments, ensuring safety
+              and long-term performance.
+            </p>
+            <p id="moreText" style="display: none">
+              With over a decade of experience, we take pride in offering
+              dependable, high-quality work tailored to every project’s needs.
+            </p>
+            <button id="readMoreBtn" class="btn btn-success mt-2">
+              Read More
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-4">Our Services</h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card h-100 text-center shadow">
+              <div class="card-body">
+                <i class="fas fa-house fa-2x text-primary mb-3"></i>
+                <h5>New House Wiring</h5>
+                <p>Safe and modern electrical wiring for new constructions.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card h-100 text-center shadow">
+              <div class="card-body">
+                <i class="fas fa-tools fa-2x text-success mb-3"></i>
+                <h5>Old House Rewiring</h5>
+                <p>Upgrade outdated wiring to ensure safety and reliability.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card h-100 text-center shadow">
+              <div class="card-body">
+                <i class="fas fa-bolt fa-2x text-warning mb-3"></i>
+                <h5>Generator Installation</h5>
+                <p>Backup power solutions for homes and businesses.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card h-100 text-center shadow">
+              <div class="card-body">
+                <i class="fas fa-globe fa-2x text-info mb-3"></i>
+                <h5>Earthing Work</h5>
+                <p>Proper grounding for electrical systems and safety.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card h-100 text-center shadow">
+              <div class="card-body">
+                <i class="fas fa-lightbulb fa-2x text-danger mb-3"></i>
+                <h5>Electric Fittings</h5>
+                <p>Installation of fans, lights, switches, and more.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 text-center shadow">
+              <div class="card-body">
+                <i class="fas fa-charging-station fa-2x text-primary mb-3"></i>
+                <h5>Generator Servicing and commissioning</h5>
+                <p>
+                  working directly with clients as well as through vendor and
+                  third-party contracts.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-5 bg-white">
+      <div class="container">
+        <h2 class="text-center mb-5">Our Work</h2>
+        <!-- Section 1: Lighting Installations -->
+        <h4 class="mb-3">Lighting Installations</h4>
+        <div class="row g-3 mb-5">
+          <div class="col-md-3">
+            <img
+              src="{% static 'images/lighting/light4.jpg' %}"
+              class="img-fluid rounded shadow"
+              alt="Lighting 1"
+            />
+          </div>
+          <div class="col-md-3">
+            <img
+              src="{% static 'images/lighting/light2.jpg' %}"
+              class="img-fluid rounded shadow"
+              alt="Lighting 2"
+            />
+          </div>
+          <div class="col-md-3">
+            <img
+              src="{% static 'images/lighting/light3.jpg' %}"
+              class="img-fluid rounded shadow"
+              alt="Lighting 3"
+            />
+          </div>
+          <div class="col-md-3">
+            <img
+              src="{% static 'images/lighting/light1.jpg' %}"
+              class="img-fluid rounded shadow"
+              alt="Lighting 3"
+            />
+          </div>
+        </div>
+        <!-- Section 2: Wiring Work -->
+        <h4 class="mb-3">Wiring Work</h4>
+        <div class="row g-3 mb-5">
+          <div class="col-md-3">
+            <img
+              src="{% static 'images/wiring/w4.jpeg' %}"
+              class="img-fluid rounded shadow"
+              alt="Wiring Work 1"
+            />
+          </div>
+          <div class="col-md-3">
+            <img
+              src="{% static 'images/wiring/wiring2.jpeg' %}"
+              class="img-fluid rounded shadow"
+              alt="Wiring Work 2"
+            />
+          </div>
+          <div class="col-md-3">
+            <img
+              src="{% static 'images/wiring/wiring3.jpeg' %}"
+              class="img-fluid rounded shadow"
+              alt="Wiring Work 3"
+            />
+          </div>
+          <div class="col-md-3">
+            <img
+              src="{% static 'images/wiring/w5.jpeg' %}"
+              class="img-fluid rounded shadow"
+              alt="Wiring Work 3"
+            />
+          </div>
+        </div>
+
+        <!-- Section 3: Generator Setups -->
+        <h4 class="mb-3">Generator Setups</h4>
+        <div class="row g-3">
+          <div class="col-md-3">
+            <img
+              src="{% static 'images/generator/gen3.jpg' %}"
+              class="img-fluid rounded shadow"
+              alt="Generator 1"
+            />
+          </div>
+          <div class="col-md-3">
+            <img
+              src="{% static 'images/generator/gen2.jpg' %}"
+              class="img-fluid rounded shadow"
+              alt="Generator 2"
+            />
+          </div>
+          <div class="col-md-3">
+            <img
+              src="{% static 'images/generator/gen1.jpg' %}"
+              class="img-fluid rounded shadow"
+              alt="Generator 3"
+            />
+          </div>
+          <div class="col-md-3">
+            <img
+              src="{% static 'images/generator/gen4.jpg' %}"
+              class="img-fluid rounded shadow"
+              alt="Generator 3"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- costermer feedback -->
+    <section class="testimonial-section">
+      <div class="container">
+        <div class="heading-layout">
+          <h2>What Our <span>Clients Say</span></h2>
+        </div>
+        <div class="owl-carousel testimonial-carousel">
+          <div class="testimonial-box">
+            <p>
+              Excellent service! They handled the entire generator setup and
+              commissioning without any hassle
+            </p>
+            <h3>Shafik, ceo</h3>
+            <span class="title">Seva Enterprises Pune</span>
+            <div class="stars">★★★★★</div>
+          </div>
+          <div class="testimonial-box">
+            <p>
+              Got my old house completely rewired by them. Clean work and very
+              reliable team.
+            </p>
+            <h3>Nikhil Naidu</h3>
+            <span class="title">Homeowner Nagpur</span>
+            <div class="stars">★★★★</div>
+          </div>
+          <div class="testimonial-box">
+            <p>
+              They did a great job with the wiring and fitting in our new shop.
+              Highly recommend their service!.
+            </p>
+            <h3>Rajesh</h3>
+            <span class="title">Shopowner, Nagpur</span>
+            <div class="stars">★★★★★</div>
+          </div>
+          <div class="testimonial-box">
+            <p>
+              Very satisfied with their generator work—on time, neat, and fully
+              functional.
+            </p>
+            <h3>Amit, manager</h3>
+            <span class="title">Kanchan pharma, Nagpur</span>
+            <div class="stars">★★★★★</div>
+          </div>
+          <!-- Add more testimonial boxes as needed -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-light py-5">
+      <div class="container">
+        <div class="row">
+          <!-- Contact Form Section (Left) -->
+          <div class="col-md-6">
+            <h2 class="text-center mb-4">Contact Us</h2>
+            <form method="POST">
+              {% csrf_token %}
+              <div class="row mb-3">
+                <div class="col-md-12">
+                  {{ form.name.label_tag }} {{ form.name }}
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col-md-12">
+                  {{ form.phone.label_tag }} {{ form.phone }}
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col-md-12">
+                  {{ form.email.label_tag }} {{ form.email }}
+                </div>
+              </div>
+              <div class="mb-3">
+                {{ form.message.label_tag }} {{ form.message }}
+              </div>
+              <div class="text-center">
+                <button type="submit" class="btn btn-primary">
+                  Send Message
+                </button>
+              </div>
+              {% if messages %} {% for message in messages %}
+              <div class="alert alert-success">{{ message }}</div>
+              {% endfor %} {% endif %}
+            </form>
+          </div>
+
+          <!-- Get In Touch Section (Right) -->
+          <div class="col-md-6">
+            <div class="footer-box-layout1">
+              <div class="footer-title">
+                <h4>Get In Touch</h4>
+              </div>
+              <div class="footer-menu-box">
+                <ul class="footer-menu-list">
+                  <li>
+                    <a
+                      href="https://g.page/Mukesh Deep Cleaning?share"
+                      target="_blank"
+                    >
+                      <i class="fa-solid fa-location-dot"></i>C/O Yogesh Tijare,
+                      Sitabuldi Road, Near Agrawal Press, Burad Galli Telipura,
+                      Patwardhan Ground S.O, Nagpur, Maharashtra-440012
+                    </a>
+                  </li>
+                  <li>
+                    <a href="tel:9372735170"
+                      ><i class="fa-solid fa-phone"></i>+91 9372735170</a
+                    >
+                  </li>
+                  <li>
+                    <a href="mailto:"
+                      ><i class="far fa-envelope"></i
+                      >vijayelectricals727@gmail.com</a
+                    >
+                  </li>
+                  <li>
+                    <iframe
+                      src="https://www.google.com/maps?q=21.144274,79.086662&z=17&output=embed"
+                      width="100%"
+                      height="300"
+                      style="border: 0"
+                      allowfullscreen=""
+                      loading="lazy"
+                      referrerpolicy="no-referrer-when-downgrade"
+                    >
+                    </iframe>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Chatbot Toggle Button -->
+    <div
+      id="chatbot-toggle"
+      style="position: fixed; bottom: 120px; right: 20px; z-index: 999"
+    >
+      <button onclick="toggleChatbox()" class="chatbot-button">
+        <img
+          src="{% static 'images/bot2.jpg' %}"
+          alt="Chatbot"
+          style="width: 100%; height: 100%; border-radius: 50%"
+        />
+      </button>
+    </div>
+
+    <!-- Chatbox -->
+    <div id="chatbox-container" class="chatbox-container" style="display: none">
+      <div id="chatbox" class="chatbox-messages">
+        <p><strong>Chatbot:</strong> Hi! How can I help you?</p>
+      </div>
+      <div class="chatbox-input">
+        <input type="text" id="user_input" placeholder="Type a message..." />
+        <button onclick="sendMessage()">Send</button>
+      </div>
+    </div>
+
+    <div class="icon-bar">
+      <a href="tel:9372735170" class="icon call" title="Call Now">
+        <i class="fa fa-phone"></i>
+      </a>
+      <a
+        href="https://wa.me/9372735170"
+        class="icon whatsapp"
+        title="Chat on WhatsApp"
+        target="_blank"
+      >
+        <i class="fab fa-whatsapp"></i>
+      </a>
+    </div>
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+      <p class="mb-0">© 2025 Vijay Electricals | 9372735170 | Nagpur</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+      setTimeout(function () {
+        let alert = document.querySelector(".alert");
+        if (alert) {
+          alert.style.display = "none";
+        }
+      }, 4000); // hide after 4 seconds
+    </script>
+
+    <script>
+      $(document).ready(function () {
+        $(".testimonial-carousel").owlCarousel({
+          loop: true,
+          margin: 30,
+          nav: true,
+          dots: false,
+          autoplay: true,
+          autoplayTimeout: 4000,
+          responsive: {
+            0: { items: 1 },
+            768: { items: 2 },
+            992: { items: 3 },
+          },
+        });
+      });
+    </script>
+    <!-- Chatbot Script -->
+    <script>
+      const chatboxContainer = document.getElementById("chatbox-container");
+      const toggleButton = document.getElementById("chatbot-toggle");
+      const userInput = document.getElementById("user_input");
+
+      function toggleChatbox() {
+        if (chatboxContainer.style.display === "block") {
+          closeChatbox();
+        } else {
+          chatboxContainer.style.display = "block";
+          userInput.focus(); // Focus input when opened
+        }
+      }
+
+      function closeChatbox() {
+        chatboxContainer.style.display = "none";
+        document.getElementById(
+          "chatbox"
+        ).innerHTML = `<p><strong>Chatbot:</strong> Hi! How can I help you?</p>`;
+        userInput.value = "";
+      }
+
+      function sendMessage() {
+        let message = userInput.value.trim();
+        if (!message) return;
+
+        const chatbox = document.getElementById("chatbox");
+        chatbox.innerHTML += `<p class='user'><strong>You:</strong> ${message}</p>`;
+
+        fetch(`/chatbot/?message=${encodeURIComponent(message)}`)
+          .then((response) => response.json())
+          .then((data) => {
+            chatbox.innerHTML += `<p class='bot'><strong>Bot:</strong> ${data.reply}</p>`;
+            chatbox.scrollTop = chatbox.scrollHeight;
+          });
+
+        userInput.value = "";
+      }
+
+      // Close chatbox if clicked outside
+      document.addEventListener("click", function (event) {
+        if (
+          !chatboxContainer.contains(event.target) &&
+          !toggleButton.contains(event.target)
+        ) {
+          closeChatbox();
+        }
+      });
+
+      // Send message on Enter key
+      document.addEventListener("DOMContentLoaded", function () {
+        userInput.addEventListener("keydown", function (e) {
+          if (e.key === "Enter") {
+            sendMessage();
+          }
+        });
+      });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const btn = document.getElementById("readMoreBtn");
+        const moreText = document.getElementById("moreText");
+
+        btn.addEventListener("click", function () {
+          if (moreText.style.display === "none") {
+            moreText.style.display = "block";
+            btn.textContent = "Read Less";
+          } else {
+            moreText.style.display = "none";
+            btn.textContent = "Read More";
+          }
+        });
+      });
+      function sendMessage() {
+        let userInput = document.getElementById("user_input").value;
+        document.getElementById(
+          "chatbox"
+        ).innerHTML += `<p class='user'>You: ${userInput}</p>`;
+
+        fetch(`/chatbot/?message=${userInput}`)
+          .then((response) => response.json())
+          .then((data) => {
+            document.getElementById(
+              "chatbox"
+            ).innerHTML += `<p class='bot'>Bot: ${data.reply}</p>`;
+          });
+
+        document.getElementById("user_input").value = "";
+      }
+    </script>
+  </body>
+</html>
