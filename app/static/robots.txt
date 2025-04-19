@@ -1,5 +1,4 @@
 # static/robots.txt
 User-agent: *
 Disallow:
-
-Sitemap: https://your-render-url.onrender.com/sitemap.xml
+Sitemap: https://vijay-electricals-hkwv.onrender.com/sitemap.xml
