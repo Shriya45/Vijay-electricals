@@ -1,0 +1,5 @@
+# static/robots.txt
+User-agent: *
+Disallow:
+
+Sitemap: https://your-render-url.onrender.com/sitemap.xml

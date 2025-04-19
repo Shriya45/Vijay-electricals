@@ -4,6 +4,7 @@ from django.template.loader import render_to_string
 from django.contrib import messages  # ✅ Add this
 from .form import ContactForm
 from django.http import JsonResponse
+from django.http import HttpResponse
 
 def index(request):
     if request.method == 'POST':
@@ -70,3 +71,10 @@ def chatbot_response(request):
         reply = responses.get(user_message, "Sorry, I don't understand. for any queries fell free to contact us at vijayelectricals727@gmail.com or call on +91 9372735170")
     
     return JsonResponse({"reply": reply})
+def robots_txt(request):
+    lines = [
+        "User-agent: *",
+        "Disallow:",
+        "Sitemap: https://vijay-electricals-hkwv.onrender.com/sitemap.xml"
+    ]
+    return HttpResponse("\n".join(lines), content_type="text/plain")
